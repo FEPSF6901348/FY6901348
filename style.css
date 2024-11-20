@@ -1,0 +1,103 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Soft black background */
+    color: #ffffff; /* White text for readability */
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Content container */
+.container {
+    max-width: 900px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Slightly lighter black for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Headers */
+h1, h2, h3, h4 {
+    color: #00bcd4; /* Modern cyan color for headers */
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+/* Paragraphs and text */
+p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #e0e0e0; /* Slightly lighter text for readability */
+}
+
+/* Links */
+a {
+    color: #03a9f4; /* Light blue for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0288d1; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Banners and Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Lists */
+ol {
+    margin: 10px 0 10px 20px;
+    color: #cfd8dc; /* Soft gray for lists */
+}
+
+ol li {
+    margin: 5px 0;
+}
+
+/* Highlighted Text */
+.bold {
+    font-weight: bold;
+    color: #ff5722; /* Modern orange for emphasis */
+}
+
+.italic {
+    font-style: italic;
+    color: #8bc34a; /* Modern green for subtle emphasis */
+}
+
+/* Footer or additional content spacing */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #bdbdbd;
+    font-size: 0.9em;
+}
