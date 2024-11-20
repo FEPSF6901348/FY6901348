@@ -4,147 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Crystals</title>
-    <style>
-        body {
-            font-family: "Computer Modern", serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: bold;
-        }
-        p {
-            margin: 1em 0;
-        }
-        .bold {
-            font-weight: bold;
-        }
-        .italic {
-            font-style: italic;
-        }
-    </style>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- MathJax for mathematical equations -->
     <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
 </head>
 <body>
-    <img src="WebBanner2023.png" alt="Banner" width="1200" height="300">
-    <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
-    <h2>Student URN: 6901348</h2>
+    <!-- Banner -->
+    <div class="container">
+        <img src="WebBanner2023.png" alt="Banner" class="banner">
+        <h1>ENG0018 Computer Laboratory 2023/24</h1>
+        <h2>Student URN: 6901348</h2>
+    </div>
 
-    <h3>Time Crystals</h3>
-    <p><strong>Author:</strong> Aarush Kalra</p>
-    <p><strong>Date:</strong> 7th October 2023</p>
+    <!-- Main Content -->
+    <div class="container">
+        <h3>Time Crystals</h3>
+        <p><strong>Author:</strong> Aarush Kalra</p>
+        <p><strong>Date:</strong> 7th October 2023</p>
 
-    <h4>Introduction</h4>
-    <p>
-        Time Crystals are a part of condensed matter physics. Time Crystals are a quantum system of particles whose 
-        lowest energy state is one in which particles are in repetitive motion. The system cannot lose energy to the 
-        environment and come to rest because it is already in its quantum ground state. Time Crystals are relatively 
-        new and exotic phase of matter that was proposed by Nobel laureate Frank Wilczek in 2012 
-        <a href="#ref1">[1]</a>.
-    </p>
+        <h4>Introduction</h4>
+        <p>
+            Time Crystals are a part of condensed matter physics. Time Crystals are a quantum system of particles 
+            whose lowest energy state is one in which particles are in repetitive motion. The system cannot lose 
+            energy to the environment and come to rest because it is already in its quantum ground state. Time 
+            Crystals are a relatively new and exotic phase of matter that was proposed by Nobel laureate Frank 
+            Wilczek in 2012 <a href="#ref1">[1]</a>.
+        </p>
 
-    <h2>1.1 Time Translation Symmetry</h2>
-    <p>
-        Time translation symmetry (also known as temporal translation symmetry). It is a fundamental concept in 
-        physics and maths. It refers to the invariance of physical laws and phenomena over time. In other words, if a 
-        physical system exhibits time translation symmetry, it means that the laws governing that system remain 
-        unchanged as time progresses.
-    </p>
+        <h2>1.1 Time Translation Symmetry</h2>
+        <p>
+            Time translation symmetry (also known as temporal translation symmetry). It is a fundamental concept in 
+            physics and maths. It refers to the invariance of physical laws and phenomena over time. In other words, 
+            if a physical system exhibits time translation symmetry, it means that the laws governing that system 
+            remain unchanged as time progresses.
+        </p>
 
-    <h3>1.1.1 Conservation of Energy</h3>
-    <p>
-        Time translation symmetry is closely related to the conservation of energy. If the laws of physics do not 
-        change over time, it implies that the total energy of a closed physical system remains constant over time. 
-        This principle is known as the conservation of energy. When physicists derive conservation of energy in a 
-        system, they start by considering time translation symmetry. By analysing the equations of motion, they can 
-        show that the total energy remains constant because the equations for kinetic and potential energy do not 
-        change with time.
-    </p>
+        <h3>1.1.1 Conservation of Energy</h3>
+        <p>
+            Time translation symmetry is closely related to the conservation of energy. If the laws of physics do not 
+            change over time, it implies that the total energy of a closed physical system remains constant over time. 
+            This principle is known as the conservation of energy.
+        </p>
 
-    <h3>1.1.2 Mathematical Formulation and Broken Symmetry</h3>
-    <p>
-        Mathematically, time translation symmetry is often expressed using the concept of time derivatives. If the 
-        laws of physics are invariant under time translations, it means that the equations describing the system's 
-        behaviour remain the same when time is shifted by a constant value. If you have a physical system described 
-        by equations and you have the variable t (time) with t + change in t where change in t is constant.
-    </p>
-    <p>
-        Many physical systems exhibit TTS (time translation symmetry). For instance: Laws of motion in classical 
-        mechanics, Quantum Mechanics using Schrödinger's equation. Broken Symmetry is when TTS can be broken, for 
-        example in the presence of external forces or non-conservative processes, the total energy of a system may 
-        not remain constant. This would lead to a violation of TTS.
-    </p>
+        <h3>1.1.2 Mathematical Formulation and Broken Symmetry</h3>
+        <p>
+            Mathematically, time translation symmetry is often expressed using the concept of time derivatives. If 
+            the laws of physics are invariant under time translations, it means that the equations describing the 
+            system's behaviour remain the same when time is shifted by a constant value.
+        </p>
 
-    <h2>1.2 Quantum Computing</h2>
-    <p>
-        Quantum computers represent a completely new approach to computing. By using principles of quantum physics, 
-        they are able to solve very complex statistical problems that normal computers can't. Quantum Computing is 
-        built on quantum bits, or qubits, which can store zeros <span class="italic">and</span> ones. Qubits can 
-        represent any combination of both zero and one simultaneously. This is known as superposition 
-        <a href="#ref2">[2]</a>.
-    </p>
+        <h2>1.2 Quantum Computing</h2>
+        <p>
+            Quantum computers represent a completely new approach to computing. By using principles of quantum 
+            physics, they can solve very complex statistical problems that normal computers can't. Quantum Computing 
+            is built on quantum bits, or qubits, which can store zeros <span class="italic">and</span> ones 
+            simultaneously. This is known as superposition <a href="#ref2">[2]</a>.
+        </p>
 
-    <h3>1.2.1 Time Crystals in Quantum Computing</h3>
-    <p>
-        Google's Quantum Computing team made headlines in 2019 when they performed the first-ever computation that 
-        ordinary computers weren't thought to be able to do in a practical amount of time. The time crystal demo marks 
-        one of the first times a Quantum Computer has found gainful employment. Google's qubits consist of 
-        superconducting aluminium strips. Each has two possible energy states, which can be programmed to represent 
-        spins pointing up or down. For the demo collaborators used a chip with 20 qubits to serve as the time crystal 
-        <a href="#ref3">[3]</a>.
-    </p>
+        <h3>1.2.1 Time Crystals in Quantum Computing</h3>
+        <p>
+            Google's Quantum Computing team made headlines in 2019 when they performed the first-ever computation 
+            that ordinary computers weren't thought to be able to do in a practical amount of time. The time crystal 
+            demo marks one of the first times a Quantum Computer has found gainful employment <a href="#ref3">[3]</a>.
+        </p>
 
-    <h2>1.3 'Recipe' of Time Crystals</h2>
-    <p>
-        A Time Crystal is a newly realised phase of matter in which particles move in a regular, repeating cycle 
-        without burning any energy. The phase arises through a combination of three special ingredients.
-    </p>
-    <p>
-        A row of particles, each with a magnetic orientation, or 'spin', will ordinarily settle into an arrangement 
-        with the lowest possible energy but random interference can make the particles get stuck in a higher-energy 
-        configuration. The effect is called <span class="bold">Many-Body Localisation</span>.
-    </p>
-    <p>
-        Many-body localised systems can exhibit a special kind of order: if you flip all the spins in the system you 
-        get another Many-body localised state. This is known as the <span class="bold">Eigenstate Order</span>.
-    </p>
-    <p>
-        Finally, the last 'ingredient' needed is known as a <span class="bold">Periodic Driver</span>. If you drive 
-        the system with a laser, it will forever cycle (flip) between the states without absorbing any net energy from 
-        the laser. This has now formed a Time Crystal.
-    </p>
+        <h2>1.3 'Recipe' of Time Crystals</h2>
+        <p>
+            A Time Crystal is a newly realised phase of matter in which particles move in a regular, repeating cycle 
+            without burning any energy. The phase arises through a combination of three special ingredients: 
+            <span class="bold">Many-Body Localisation</span>, <span class="bold">Eigenstate Order</span>, and a 
+            <span class="bold">Periodic Driver</span>.
+        </p>
 
-    <h2>1.4 Conclusion</h2>
-    <p>
-        Our effort to realize a time crystalline phase uses quantum processors in a unique way. That’s because 
-        computations are usually carried out on these processors with a set of logical operations called quantum 
-        gates. The computation has no relation to the underlying governing dynamics of the system – in technical 
-        terms, the desired Hamiltonian is not realized on the processor. In such computations, the processor is used 
-        in roughly the same way as in a classical computer.
-    </p>
-    <p>
-        However, this quest of establishing a dynamical phase is fundamentally different. Here, the question is 
-        whether a stable phase can emerge in a many-body driven isolated system. For such questions, our processor and 
-        our setting is indeed the natural platform to explore such questions. Our implementation is on the direct path 
-        toward realization of this dynamical phase. The challenge that makes our result fall short of a full 
-        realization is extrapolating the response to infinite time and system size, which are all ultimately rooted in 
-        the finite coherence time of the system. The core of our work and achievements is to devise experimental 
-        methods to provide a basis for making such extrapolations.
-    </p>
-    <p>
-        As our results show, the protocols developed here are general and establish a scalable approach to studying 
-        non-equilibrium phases of matter on NISQ processors 
-        <a href="#ref4">[4]</a>.
-    </p>
+        <h2>1.4 Conclusion</h2>
+        <p>
+            Our effort to realize a time crystalline phase uses quantum processors in a unique way. The challenge is 
+            extrapolating the response to infinite time and system size, which is rooted in the finite coherence time 
+            of the system. The core of our work is to devise experimental methods to provide a basis for such 
+            extrapolations <a href="#ref4">[4]</a>.
+        </p>
 
-    <h2>References</h2>
-    <ol>
-        <li id="ref1">Placeholder for reference 1.</li>
-        <li id="ref2">Placeholder for reference 2.</li>
-        <li id="ref3">Placeholder for reference 3.</li>
-        <li id="ref4">Placeholder for reference 4.</li>
-    </ol>
+        <h2>References</h2>
+        <ol>
+            <li id="ref1">Placeholder for reference 1.</li>
+            <li id="ref2">Placeholder for reference 2.</li>
+            <li id="ref3">Placeholder for reference 3.</li>
+            <li id="ref4">Placeholder for reference 4.</li>
+        </ol>
+    </div>
 </body>
 </html>
